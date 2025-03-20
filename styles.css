@@ -1,0 +1,1282 @@
+/* Reset e Configuração Geral */
+html{ font-size: 16px; }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'M PLUS 1', sans-serif;
+    font-size: 1rem; /* Tamanho base da fonte (16px) */
+    line-height: 1.6;
+    color: #1B1B1B;    
+    cursor: url('https://cdn.iconscout.com/icon/free/png-256/cursor-1832673-1552212.png'), auto;   
+    
+}
+
+/* ====== Aplicação das Fontes ====== */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; /* Negrito para títulos */
+}
+
+/* Tamanhos responsivos */
+h1 { font-size: 2.5rem; } /* Aproximadamente 40px */
+h2 { font-size: 2rem; } /* Aproximadamente 32px */
+h3 { font-size: 1.5rem; } /* Aproximadamente 24px */
+
+
+p, body {
+    font-size: 1.125rem; /* Aproximadamente 18px */
+    line-height: 1.6;
+}
+
+span{ font-weight: bold; }
+
+span:hover{
+    background-color: #3a3076;
+    color: #f8f8f8;
+    border:2px;
+}
+
+section {
+    padding-bottom: 32px; /* Reduzindo o espaçamento no final de cada seção */
+}
+
+/* =================== PADRÃO DE MARGENS =================== */
+.container {
+    max-width: calc(100% - 128px); /* 64px de cada lado */
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+/* Navbar */
+header {
+    background-color: #1B1B1B;
+    padding: 80px 10%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: calc(100% - 128px);
+    margin: 0 auto;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 20; /* Negrito para destaque */
+    letter-spacing: -20px;
+    font-size: 2rem; /* Ajuste conforme necessário */
+    letter-spacing: -1.5px; /* Suaviza o espaçamento */
+    /*font-kerning: none;*/
+    text-transform: uppercase; /* Deixa tudo em maiúsculas para impacto*/
+    color: #F8F8F8;   
+}
+
+.logo:hover{ transform: scale(1.1); }
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    padding-right: 80px 10%; /* Ajusta o alinhamento com o conteúdo */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+}
+
+.menu a {
+    font-family: 'M PLUS 1', sans-serif;
+    /*font-size: 18px;*/
+    font-weight: 80;
+    color: #F8F8F8;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;    
+}
+
+.menu a:hover {
+    color: #8EE3C8;
+    transform: scale(1.01);         
+}
+
+/* Botão CTA */
+
+.cta-container {
+    /*background-color: #8ee3c840;*/
+    background-color: #ffffff3d;
+    display: flex;
+    flex-direction: column; /* Empilha o texto e o botão */
+    align-items: center; /* Centraliza os elementos na vertical */
+    justify-content: center;
+    text-align: center;
+    padding: 30px 20px; /* Adiciona espaço interno */
+    margin-top: 40px; /* Espaço após as habilidades */
+    border-radius: 32px;
+    box-shadow: 0 4px 12px #3b307662; /* Sombra sutil para destacar */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cta-container:hover {
+    transform: scale(1.05);
+    background-color: #8ee3c80c;
+}
+
+/* Estilização do Texto */
+#about .cta-container p {
+    color: #3A3076;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px; /* Ajuste para melhor responsividade */
+    font-weight: 1000;
+    margin-bottom: 20px; /* Espaço abaixo do texto */
+}
+
+.cta-button {
+    background-color: #3A3076;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #F8F8F8 !important;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #97266E;
+    transform: scale(1.1);   
+}
+
+.nav-container .cta-button {
+    background-color: #3A3076;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #F8F8F8 !important;
+    font-weight: bold;
+}
+
+.nav-container .cta-button:hover{
+    background-color: #97266E;
+    transform: scale(1.1) !important;
+}
+
+/* Seção Sobre */
+
+.about {
+    text-align: left;
+    padding: 80px 10%;
+}
+
+.about h1 {
+    position: relative;
+   
+    
+}
+
+.about-box .btn-primary {
+    display: block;
+    margin: 20px auto 0 auto; /* Centraliza o botão */
+    text-align: center;
+    width: fit-content; /* Ajusta a largura ao conteúdo do botão */
+    padding: 14px 28px; /* Aumentando levemente o espaçamento interno */
+    font-size: 1.25rem; /* Aumentando um pouco o tamanho da fonte */
+    border-radius: 8px;
+}
+
+#about > .about-me  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff83;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px #3b30766a;
+    padding: 40px;
+    margin-top: 40px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;    
+}
+
+#about > .about-me:hover  {
+    transform: scale(1.02)    
+}
+
+#about > .about-me p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 1px;
+    text-indent: 1.2rem;
+    margin-bottom: 24px;
+}
+
+/* Estilização do Container */
+.skills-container {
+    margin-top: 40px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    max-width: 100%;
+    /*margin-top: 40px;*/
+}
+
+.skills-container h2 {
+
+    text-align: left;
+    margin-top: 40px;
+  
+}
+
+.skills-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 32px;
+    padding-bottom: 8px;
+    scrollbar-width: none; /* Oculta a barra de rolagem em navegadores modernos */
+    -ms-overflow-style: none; /* Para o IE e Edge */
+}
+
+.skills-carousel::-webkit-scrollbar {
+    display: none; /* Oculta a barra de rolagem no Chrome e Safari */
+}
+
+/* Wrapper para o Scroll Arrastável */
+.scroll-wrapper {
+    overflow-x: auto;
+    cursor: grab;
+    padding-bottom: 10px;
+    white-space: nowrap; /* Mantém os cards em linha */
+    scroll-behavior: smooth; /* Rolagem suave */
+}
+
+/* Ocultar barra de rolagem */
+.scroll-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-wrapper {
+    -ms-overflow-style: none; /* IE e Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Botões Laterais */
+.arrow {
+    background: #3A3076cc;
+    color: #F8F8F8;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, transform 0.2s;
+    position: absolute;
+    top: 50%;
+}
+
+.arrow:hover {
+    background: #2C2759;
+    /*transform: scale(1.1);*/
+}
+
+.left-arrow {
+    left: -10px; /* Ajuste para manter a seta visível */
+}
+
+.right-arrow {    
+    position: absolute;
+    right: -10px;
+}
+
+.left-arrow, .right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #3a3076cc;
+    color: #F8F8F8;
+    border: none;
+    font-size: 24px;
+    padding: 12px 18px; /* Aumenta o tamanho do botão */
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+    z-index: 10;
+}
+
+
+/* Contêiner principal dos cards */
+.design-process-container {
+    display: flex;
+    gap: 32px; /* Mantém o espaçamento entre os cards */
+    scroll-behavior: smooth;
+    transition: transform 0.3s ease-in-out;
+    padding: 0 80px; /* Aumenta o padding para criar espaço nas laterais */
+    position: relative;
+}
+
+.card {
+    /*flex: 0 0 300px; /* Aumenta a largura para que os cards tenham mais espaço */
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    height: 250px;
+    min-width: 280px;
+    max-width: 320px;
+    box-shadow: 0 4px 8px #2c275984;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden; /* Evita que o texto saia para fora do card */
+    white-space: normal; /* Permite quebra de linha */
+    margin: 0 20px; /* Adiciona margem para espaçamento entre as setas */
+}
+
+/* Ajustando o texto dentro dos cards */
+.card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 1rem;
+    word-wrap: break-word; /* Impede que palavras longas estourem o layout */
+    overflow: hidden; /* Evita que o texto vaze */
+    text-overflow: ellipsis; /* Adiciona "..." caso o texto ultrapasse */
+    padding: 0 10px; /* Adiciona espaçamento interno */
+    line-height: 1.4;
+}
+
+.card:hover { transform: scale(1.05); }
+
+.about p {
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+/* Botão Principal */
+.btn-primary {
+    background-color: #3A3076;
+    font-size: 1.25rem;
+    color: #F8F8F8;
+    font-family: 'M PLUS 1', sans-serif;    
+    font-weight: 500;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 30px;
+    padding: 12px 24px;
+    text-align: center;
+    width: fit-content; /* Ajusta a largura ao conteúdo do botão */    
+    transition: transform 0.2s;
+    white-space: nowrap; /* Evita quebra de linha */
+}
+
+.btn-primary:hover {
+    background-color: #97266E;
+    transform: scale(1.05);
+}
+
+/* ===== Linha divisória entre seções ===== */
+.section-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 32px auto;
+}
+
+.section-divider::before,
+.section-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #3A3076;
+    max-width: 250px;
+}
+
+.section-divider span {
+    font-size: 1.2rem;
+    color: #3A3076;
+    margin: 0 8px;
+}
+
+
+/* ===== Seção Projetos ===== */
+.projects {
+    padding: 40px 10%;
+    text-align: left;
+}
+
+
+
+
+
+.divider-container {
+margin: 0;
+margin-top: 0;
+border-radius: 12px;
+}
+/*.divider-1{ background: #8EE3C8 }
+.divider-2 {background: #97266E;}*/
+.divider-3 {background: #3A3076;}
+
+.divider-3  {
+    width: 100%;
+    height: 2px;
+    margin-bottom: 2px;
+}
+
+.projects-image img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;  /*Garante que a imagem mantenha proporção */
+    object-position: center; /*Mantém a imagem centralizada */
+    border-radius: 8px;
+}*/
+
+/* Container dos Projetos */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+    
+}
+
+#projects h1{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/*#projects .projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}*/
+
+/* Estrutura do Projeto */
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: #FFF;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 40px;           
+}
+
+
+
+.project:hover{
+    transform: scale(1.05)    
+}
+
+/* Informações do Projeto */
+.project-info {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza os elementos */    
+}
+
+.project-info .btn-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+    gap: 16px; /* Espaçamento entre os botões */
+    margin-top: 20px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    gap: 16px; /* Espaçamento entre os botões */
+    flex-wrap: wrap; /* Garante que os botões se ajustem em telas menores */
+    margin-top: 20px; /* Espaçamento entre o texto e os botões */
+}
+
+.project-info h2 {
+    /*font-size: 28px;
+    font-weight: 600;*/
+    margin-bottom: 10px;
+    font-size: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+}
+
+.divider-projects {
+    width: 100%;
+    height: 1px;
+    background-color: #565353;
+    margin-bottom: 24px;
+    margin-top: 0; 
+}
+
+.divider-projects2 {
+    width: 100%;
+    height: 1px;
+    background-color: #b1b1b1;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+.divider-medium {
+    width: 300px;
+    height: 1px;
+    background-color: #3A3076;
+    margin-bottom: 10px;
+    margin-top:0;
+}
+
+.project-info p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-size: 1.125rem;
+    text-align: left;
+}
+
+.project-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-info ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Ajustando os botões */
+.project-info .btn-primary {
+    padding: 12px 24px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px; /* Define um tamanho mínimo para manter a estética */
+}
+
+/* Imagem do Projeto */
+.project-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+/* Contêiner do slider */
+.project-slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.project-slider .arrow {
+    position: absolute;
+    background-color: #00000099;
+    color: #F8F8F8;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.project-slider .prev, .project-slider .next {
+    /*background-color: #3a3076cc; /* Cor igual às setas das skills */
+    color: #f8f8f8;
+    font-size: 1.5rem;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.project-slider .prev:hover, .project-slider .next:hover {
+    background-color: #3a3076; /* Mesma cor do hover das skills */    
+}
+
+/* Setas de navegação */
+.project-slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #1b1b1b55;
+    color: #f8f8f8;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    /*font-size: 20px;*/
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+/* Ajuste para afastar as setas */
+.project-slider-container .left-arrow {
+    left: -80px; /* Afasta a seta esquerda */
+}
+
+.project-slider-container .right-arrow {
+    right: -80px; /* Afasta a seta direita */
+}
+
+.project-slider button:hover {
+    background-color: #000000cc;
+}
+
+/* Define o tamanho das imagens e ajusta o display */
+.project-images {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+}
+
+/* Ajuste para cada imagem */
+.project-images img {
+    min-width: 100%;
+    max-width: 100%;
+    /*width: 100%;*/
+    height: auto; /* Ajusta a altura automaticamente */
+    object-fit: contain; /* Garante que a imagem fique inteira sem cortes */
+    max-height: 400px; /* Define um limite de altura */
+}
+/* Indicadores (bolinhas) */
+.project-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicator.active {
+    background-color: #3A3076;
+}
+
+.project-indicators .indicator {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.project-indicators .indicator.active {
+    background-color: #2C2759;
+}
+
+.project-indicators span {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Contador de imagens no canto superior direito */
+.image-counter {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #1b1b1b55;
+    color: #F8F8F8;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 10; /* Para garantir que fique na frente */
+}
+
+/* ===== Seção Feedbacks ===== */
+.feedbacks {
+    text-align: left;
+    padding: 40px 10%;
+}
+
+.feedbacks h1 {
+    /*font-family: 'Encode Sans', sans-serif;*/
+    /*font-size: 40px;
+    font-weight: 500;*/
+    /*margin-bottom: 10px;*/
+    font-size: 2.5rem;
+}
+
+/* ===== Container dos Feedbacks ===== */
+.feedbacks-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* ===== Estilos dos Cards de Feedback ===== */
+.feedback-card {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0px 4px 8px #2c275984;
+    max-width: 320px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid #DDD;
+}
+
+.feedback-card:hover {
+    /*background-color: #8ee3c81d;*/
+    transform: scale(1.05);
+}
+
+.feedback-card h2 {
+    margin-bottom: 8px;
+  }
+
+.feedback-card p {
+    font-size: 1.125rem;
+    /*font-family: 'M PLUS 1', sans-serif;*/
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+/* ===== Seção Contato ===== */
+.contact {
+    text-align: left;
+    padding: 40px 10%;
+}
+
+/* ===== Caixa de Contato ===== */
+.contact-box {
+    display: flex;
+   /* flex-wrap: wrap;*/
+    /*background-color: #8ee3c840;*/
+    background-color: #ffffff3d;    
+    /*flex-direction: row;*/
+    align-items: center; 
+    justify-content: center;
+    /*gap: 80px;*/
+    width: 100%;
+    height: 100%;
+    /*max-width: 800px;*/
+    min-height: 190px;
+    margin: 40px auto;
+    padding: 0;
+    box-shadow: 0 4px 12px #3b307662; /* Sombra roxa */
+    border-radius: 64px; /* Arredondamento conforme especificação */
+    text-align: center;
+}
+.contact-box:hover{
+    transform: scale(1.05);
+    background-color: #8ee3c80c;
+}
+
+/* Botões de Contato */
+.contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 2rem;
+    padding: 12px 20px;
+    border-radius: 8px;
+    /*background-color: #3A3076;*/
+    color: #2C2759;
+    text-decoration: none;
+}
+
+.contact-button:hover {
+    /*background-color: #97266E;*/
+    transform: scale(2);
+    color: #2C2759;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 20px;
+
+}
+
+.icons2{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 20px;
+    
+}
+.icons2 p {
+    color: #3A3076;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px; /* Ajuste para melhor responsividade */
+    font-weight: 1000;
+    /*margin-bottom: 20px; /* Espaço abaixo do texto */
+    gap:0;
+
+}
+
+/* Ícones dentro dos Botões */
+.contact-button i { 
+    font-size: 2rem; /* Ajuste do tamanho do ícone */
+    color: #3A3076;
+    transition: transform 0.2s ease-in-out;
+    /*gap: 32px;*/
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #1B1B1B;
+    color: #F8F8F8;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.125rem; /* 18px */
+}
+
+.footer {
+    background-color: #1B1B1B;
+    text-align: center;
+    padding: 30px;
+    font-size: 1rem; /* 16px */
+}
+
+/* Container do Footer */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espaço entre os elementos */
+}
+
+/* Ícones das Redes Sociais */
+.social-links {
+    display: flex;
+    gap: 32px;  /* Espaçamento entre os ícones */
+    justify-content: center; /* Centraliza os ícones */
+    align-items: center;
+    margin-top: 15px;
+}
+
+.social-links a {
+    font-size: 24px; /* Tamanho dos ícones */
+    color: #F8F8F8; /* Cor dos ícones */
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #8EE3C8; /* Cor ao passar o mouse */
+    transform: scale(1.1);
+}
+
+/* Texto de Direitos Autorais */
+.footer-text {
+    /*font-family: 'M PLUS 1', sans-serif;*/
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #1B1B1B;
+    text-align: center;
+    padding: 30px;
+}
+
+/* ========== EFEITO DE APARECIMENTO AO ROLAR ========== */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========== EFEITO HOVER NOS PROJETOS ========== */
+.project {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px #3b30766e;
+}
+
+.project.hovered {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px #3A3076;
+}
+
+/* Mantém o mesmo efeito do feedback */
+.feedback-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.feedback-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px #00000033;
+}
+
+.project:hover {
+    transform: scale(1.03);
+}
+
+/* ========== EFEITO  ========== */
+/* Fundo de partículas */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #F8F8F8;
+    z-index: -1;
+}
+
+
+/* ===== RESPONSIVIDADE ===== */
+
+
+
+@media (max-width: 360px) { /* Smartphones pequenos */
+    .about {
+        text-align: center;
+        margin: 20px 0 24px
+    }
+    .project-info p {
+       line-height: 40px;
+       margin: auto;
+    }
+
+}
+
+@media (max-width: 480px) { /* iPhones padrão e celulares menores*/ 
+    .about {
+        text-align: center;
+    }
+
+    .about p {
+        /*font-size: 24px;*/
+        line-height: 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: calc(100% - 32px);
+    }
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contact-box {
+        width: 90%;
+    }
+    .footer {
+        padding: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }   
+    .about {
+        text-align: center;
+    }
+
+    .divider-container {
+        align-items: center;
+    }
+
+    .about p {
+        /*font-size: 24px;*/
+        line-height: 40px;
+    }
+
+    .btn-primary {
+        /*font-size: 24px;*/
+        padding: 12px 20px;
+    }
+    
+    /* Ajuste para telas menores */
+
+    section {
+        padding-bottom: 24px; /* Espaço menor em telas menores */
+    }
+
+    .section-divider {
+        margin: 24px auto;
+    }
+
+    .about h2, .projects h2, .feedbacks h2, .contact h2 {
+        font-size: 1.5rem; /* 24px */
+    }
+
+    .about p, .project-info p, .feedback-card p {
+        font-size: 0.875rem; /* 14px */
+    }
+
+    .btn-primary, .contact-button {
+        font-size: 1rem; /* 16px */
+    }
+
+    .skills-wrapper {
+        max-width: 90%;
+    }
+
+    .arrow {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .left-arrow {
+        left: -20px;
+    }
+
+    .right-arrow {
+        right: -20px;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact-box {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .contact-buttons, .social-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .contact-button {
+        width: 100%;
+        max-width: 300px; /* Limita o tamanho dos botões */
+    }
+
+    .cta-container {
+        padding: 20px;
+    }
+    .cta-container p {
+        font-size: 20px;
+    }
+    .cta-container a {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+
+    .contact.container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-buttons,
+    .cta-footer {
+        max-width: 100%;
+    }
+    .contact.container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-buttons, .cta-footer {
+        max-width: 100%;
+    }
+
+    .contact-buttons {
+        justify-content: center;
+    }
+
+    .contact-box {
+        flex-direction: wrap;
+        text-align: center;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .skills-container h2 {
+        font-size: 22px;
+    }
+
+    .card {
+        min-width: 260px;
+        max-width: 300px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-image {
+        max-width: 100%;
+    }
+
+    .project-info {
+        text-align: center;
+    }
+
+    .project-info ul {
+        text-align: left;
+        display: inline-block;
+    }
+
+    .feedbacks-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .feedback-card {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .divider-container {
+        align-items: flex-start;
+    }
+
+    .divider-3 { width: 100%; }
+
+
+    .container {
+        max-width: calc(100% - 64px);
+    }
+    .contact-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .about h2, .projects h2, .feedbacks h2, .contact h2 {
+        font-size: 1.75rem;
+    }
+
+    .about p, .project-info p, .feedback-card p {
+        font-size: 1rem; 
+    }
+
+    .btn-primary, .contact-button {
+        font-size: 1.125rem; 
+    }
+}
+
+@media (max-width: 1400px) {
+    .contact-box {
+        width: 90%;
+        height: auto;
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+
+/* Ajuste para evitar sobreposição em telas menores */
+@media (max-width: 1024px) {
+    .project-slider .left-arrow {
+        left: -30px; /* Menos afastado para telas pequenas */
+    }
+
+    .project-slider .right-arrow {
+        right: -30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-info {
+        text-align: center; /* Ajuste do texto para telas menores */
+    }
+
+    .btn-container {
+        flex-direction: column; /* Botões empilhados em telas pequenas */
+        gap: 12px;
+        align-items: center;
+    }
+
+    .project-images img {
+        max-width: 100%; /* Permite que a imagem se ajuste ao container */
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .project {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
