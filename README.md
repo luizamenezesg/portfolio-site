@@ -1,20 +1,100 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🌐 Portfólio — Luiza Menezes
 
-# Run and deploy your AI Studio app
+Este é meu portfólio como UX/UI Designer, desenvolvido para apresentar projetos, habilidades e minha abordagem na criação de produtos digitais centrados no usuário.
 
-This contains everything you need to run your app locally.
+🔗 Acesse: https://luizamenezseg.github.io/portfolio-site/
 
-View your app in AI Studio: https://ai.studio/apps/da416da8-5f88-43d9-a9bc-21086a9f88dc
+---
 
-## Run Locally
+## ✨ Sobre o projeto
 
-**Prerequisites:**  Node.js
+Este portfólio foi desenvolvido com foco em:
 
+* Experiência do usuário clara e intuitiva
+* Interface visual moderna e responsiva
+* Organização estratégica dos projetos
+* Performance e carregamento rápido
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+O objetivo é comunicar não só o resultado final, mas também o raciocínio por trás das soluções.
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+* React
+* Vite
+* TypeScript
+* Tailwind CSS
+
+---
+
+## 🚀 Como rodar o projeto localmente
+
+```bash
+# Clonar o repositório
+git clone https://github.com/luizamenezseg/portfolio-site.git
+
+# Entrar na pasta
+cd portfolio-site
+
+# Instalar dependências
+npm install
+
+# Rodar o projeto
+npm run dev
+```
+
+---
+
+## 📦 Build para produção
+
+```bash
+npm run build
+```
+
+Os arquivos finais serão gerados na pasta `dist/`, utilizada para deploy no GitHub Pages.
+
+---
+
+## 🌍 Deploy
+
+O projeto está hospedado no GitHub Pages.
+
+Para atualizar:
+
+1. Rodar `npm run build`
+2. Substituir os arquivos do repositório pelo conteúdo da pasta `dist`
+
+---
+
+## 📄 Currículo
+
+O currículo está disponível diretamente no site para visualização e download.
+
+---
+
+## 💡 Sobre mim
+
+Sou UX/UI Designer com foco em criar soluções digitais que equilibram estética, usabilidade e impacto real no produto.
+
+Tenho experiência com:
+
+* Design de interfaces
+* Organização de fluxos e arquitetura da informação
+* Análise e melhoria de experiência do usuário
+* Processos e visão analítica aplicada ao design
+
+---
+
+## 📫 Contato
+
+* LinkedIn: https://www.linkedin.com/in/luizamenezesg/
+* Email: luizamenezesg@gmail.com
+
+---
+
+## 🧠 Observação
+
+Este projeto utiliza `HashRouter` para compatibilidade com GitHub Pages.
+
+---
